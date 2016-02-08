@@ -7,7 +7,7 @@
 # *****************************************************
 # Set to "yes" to create realy minimal image          *
 # *****************************************************
-ONLY_BASE="no"
+ONLY_BASE="yes"
 
 
 # *****************************************************
@@ -53,8 +53,8 @@ LANG="en_US.UTF-8"
 # IF _format="" partition will NOT be formated        *
 # otherwyse it will be formated with specified format *
 # *****************************************************
-image_name=""
-#image_name="minimal"
+#image_name=""
+image_name="minimal"
 #image_name="/dev/sdg"
 
 
@@ -113,7 +113,8 @@ repo="http://ports.ubuntu.com/ubuntu-ports"
 # after creation and make the md5sum file              *
 # to do that automatically, set  _compress="yes"       *
 # ******************************************************
-_compress="yes"
+_compress="no"
+#_compress="yes"
 
 
 # =====================================================
