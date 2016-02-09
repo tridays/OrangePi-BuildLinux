@@ -7,14 +7,14 @@
 # *****************************************************
 # Set to "yes" to create realy minimal image          *
 # *****************************************************
-ONLY_BASE="yes"
+ONLY_BASE="no"
 
 
 # *****************************************************
 # Set hostname, user to be created                    *
 # and root and user passwords                         *
 # *****************************************************
-HOSTNAME="OrangePI"
+HOSTNAME="thanad-orangepi"
 USER="orangepi"
 ROOTPASS="orangepi"
 USERPASS="orangepi"
@@ -23,7 +23,7 @@ USERPASS="orangepi"
 # *****************************************************
 # Set timezone, for default (HOST'S) set _timezone="" *
 # *****************************************************
-_timezone="Etc/UTC"
+_timezone="Asia/Bangkok"
 #_timezone=""
 
 
@@ -80,7 +80,7 @@ _format="ext4"
 # "linuxsize" is calculated from directory size       *
 # *****************************************************
 fatsize=64
-linuxsize=800
+linuxsize=700
 
 
 # *****************************************************

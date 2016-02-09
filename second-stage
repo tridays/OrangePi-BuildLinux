@@ -8,6 +8,7 @@
 . params.sh
 
 _LOGFILE="/install.log"
+touch $_LOGFILE
 
 export DEBIAN_FRONTEND=noninteractive
 
@@ -268,8 +269,7 @@ fi
 #---------------------------------------------------------------------
 
 if [ "${raspbian}" = "yes" ] ; then
-    wget https://archive.raspbian.org/raspbian.public.key
-    apt-key add raspbian.public.key
+    wget https://archive.raspbian.org/raspbian.public.key -O - | apt-key add -
 fi
 
 echo "======================="
@@ -391,6 +391,7 @@ useradd -m -s "/bin/bash" $USER >> $_LOGFILE 2>&1
 echo $USER:$USERPASS | chpasswd
 usermod -c $USER $USER >> $_LOGFILE 2>&1
 adduser $USER sudo >> $_LOGFILE 2>&1
+echo $USER "ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 if ! [ "${ONLY_BASE}" = "yes" ] ; then
     # ** Tricks
