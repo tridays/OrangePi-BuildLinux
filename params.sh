@@ -14,24 +14,16 @@ ONLY_BASE="no"
 # Set hostname, user to be created                    *
 # and root and user passwords                         *
 # *****************************************************
-<<<<<<< HEAD
 HOSTNAME="OrangePI"
 USER="xp"
 ROOTPASS="19531"
 USERPASS="19531"
-=======
-HOSTNAME="thanad-orangepi"
-USER="orangepi"
-ROOTPASS="orangepi"
-USERPASS="orangepi"
->>>>>>> 125c65524a84eb8a25a37098396af24b76fb496f
 
 
 # *****************************************************
 # Set timezone, for default (HOST'S) set _timezone="" *
 # *****************************************************
-_timezone="Asia/Bangkok"
-#_timezone=""
+_timezone="Etc/UTC +8"
 
 
 # *****************************************************
@@ -61,9 +53,7 @@ LANG="en_US.UTF-8"
 # otherwise it will be formatted with specified       *
 # format.                                             *
 # *****************************************************
-#image_name=""
 image_name="minimal"
-#image_name="/dev/sdg"
 
 
 # *****************************************************
@@ -92,17 +82,20 @@ linuxsize=700
 
 
 # *****************************************************
-#   Select ubuntu/debian distribution and repository  *
+#   Select ubuntu/debian distribution(code name) and  *
+# repository, detail refer to                         *
+# https://en.wikipedia.org/wiki/List_of_Ubuntu_releases*
 #     === SELECT ONLY ONE distro AND ONE repo ===     *
 # *****************************************************
 
 # === Ubuntu ===
-distro="xenial"
 #distro="precise"
 #distro="trusty"
 #distro="utopic"
 #distro="vivid"
 #distro="wily"
+distro="xenial"
+#distro="yakkety"
 repo="http://ports.ubuntu.com/ubuntu-ports"
 
 # === Debian ===
@@ -122,8 +115,7 @@ repo="http://ports.ubuntu.com/ubuntu-ports"
 # after creation and make the md5sum file              *
 # to do that automatically, set  _compress="yes"       *
 # ******************************************************
-_compress="no"
-#_compress="yes"
+_compress="yes"
 
 
 # =====================================================
