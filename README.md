@@ -1,4 +1,4 @@
-Building Ubuntu/Debian installation for OrangePI H3 boards using debootstrap
+Building Ubuntu/Debian installation for bananaPI boards using debootstrap
 ============================================================================
 
 Install packages needed
