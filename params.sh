@@ -14,16 +14,23 @@ ONLY_BASE="no"
 # Set hostname, user to be created                    *
 # and root and user passwords                         *
 # *****************************************************
+<<<<<<< HEAD
 HOSTNAME="OrangePI"
 USER="xp"
 ROOTPASS="19531"
 USERPASS="19531"
+=======
+HOSTNAME="thanad-orangepi"
+USER="orangepi"
+ROOTPASS="orangepi"
+USERPASS="orangepi"
+>>>>>>> 125c65524a84eb8a25a37098396af24b76fb496f
 
 
 # *****************************************************
 # Set timezone, for default (HOST'S) set _timezone="" *
 # *****************************************************
-_timezone="Etc/UTC"
+_timezone="Asia/Bangkok"
 #_timezone=""
 
 
@@ -54,8 +61,8 @@ LANG="en_US.UTF-8"
 # otherwise it will be formatted with specified       *
 # format.                                             *
 # *****************************************************
-image_name=""
-#image_name="minimal"
+#image_name=""
+image_name="minimal"
 #image_name="/dev/sdg"
 
 
@@ -81,7 +88,7 @@ _format="ext4"
 # "linuxsize" is calculated from directory size       *
 # *****************************************************
 fatsize=64
-linuxsize=800
+linuxsize=700
 
 
 # *****************************************************
@@ -115,7 +122,8 @@ repo="http://ports.ubuntu.com/ubuntu-ports"
 # after creation and make the md5sum file              *
 # to do that automatically, set  _compress="yes"       *
 # ******************************************************
-_compress="yes"
+_compress="no"
+#_compress="yes"
 
 
 # =====================================================
