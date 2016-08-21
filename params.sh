@@ -15,9 +15,9 @@ ONLY_BASE="no"
 # and root and user passwords                         *
 # *****************************************************
 HOSTNAME="OrangePI"
-USER="orangepi"
-ROOTPASS="orangepi"
-USERPASS="orangepi"
+USER="xp"
+ROOTPASS="19531"
+USERPASS="19531"
 
 
 # *****************************************************
@@ -89,8 +89,9 @@ linuxsize=800
 # *****************************************************
 
 # === Ubuntu ===
+distro="xenial"
 #distro="precise"
-distro="trusty"
+#distro="trusty"
 #distro="utopic"
 #distro="vivid"
 #distro="wily"
@@ -124,7 +125,7 @@ _compress="yes"
 # --------------------------------------------------- =
 # DO NOT CHANGE FOR NOW !                             =
 # =====================================================
-_boot_on_ext4="no"
+_boot_on_ext4="yes"
 
 
 # ^^^^ P A R A M E T E R S ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
