@@ -1,4 +1,4 @@
-Building Ubuntu/Debian installation for bananaPI boards using debootstrap
+Building Ubuntu/Debian installation for OrangePI boards using debootstrap
 ============================================================================
 
 Install packages needed
